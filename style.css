@@ -1,0 +1,72 @@
+*,html,body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Silkscreen', cursive;
+}
+
+:root {
+	--bg-primary: #eaeaea;
+	--bg-secondary: #aab6fb; 
+	--text-primary: black;
+	--text-secondary: white;
+	--icons-bg-primary: black;
+	--icons-bg-secondary: black;
+}
+
+.container {
+	width: 100%;
+	height: 100vh;
+	background-color: var(--bg-secondary);
+}
+
+.wrapper {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: auto;
+}
+
+.card {
+	border: 1px solid white;
+	background-color: var(--bg-primary);
+	color: var(--text-primary);
+	padding: 20px;
+	margin: 8px;
+	box-shadow: 4px 4px 4px 4px rgba(0,0,0,0.3)
+}
+
+.text-center {
+	text-align: center;
+}
+
+.title {
+	font-size: 2em;
+
+}
+
+.icons {
+	margin-top: 8px;
+	font-size: 26px;
+	color: var(--icons-bg-primary);
+}
+
+.description {
+	margin-top: 8px;
+	font-size: .6em;
+}
+
+.btn {
+	margin-top: 16px;
+	padding: 12px;
+	cursor: pointer;
+	border: none;
+	width: 100%;
+}
+
+.btn:hover {
+	background-color: var(--bg-secondary);
+	color: var(--text-secondary);
+	--ms-transporm: rotate(2deg);
+	transform: rotate(2deg);
+	transition: .3s ease-in-out;
+}
